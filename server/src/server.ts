@@ -1,11 +1,16 @@
 import Fastify from 'fastify'  // Imports in JS are so weird
 import { PrismaClient } from '@prisma/client'
-import cors from '@fastify/cors'
+import cors from '@fastify/cors'; '@fastify/cors'
+// Is it 'cors' or 'fastifyCors'?
 
 const app = Fastify();  // Instatiating the object
 const prisma = new PrismaClient();
 
-app.register(cors)
+// app.register(fastifyCors, {
+//     origin: ['http://localhost:3000']
+// })
+// Learn more of how CORS actually work
+app.register(cors);
 
 
 /* The .get() method receives two positional args, 
@@ -18,7 +23,7 @@ app.get('/', ()=>{
     return "Hello NLW!"
 });
 
-app.get('/find-one-element/', ()=>{
+app.get('/find-one-element', ()=>{
     let habit = prisma.habit.findMany({
         where: {
             title: {
@@ -36,7 +41,7 @@ app.get('/find-multiple-elements-no-sync-await', ()=>{
     return habit
 })
 
-app.get('/find-all-elements-using-async-await/', async () => {
+app.get('/find-all-elements-using-async-await', async () => {
     let habit = await prisma.habit.findMany();
 
     return habit

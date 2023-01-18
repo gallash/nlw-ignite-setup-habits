@@ -10,10 +10,10 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-model Habits {
+model Habit {
   id String @id @default(uuid())
   title String
   created_at DateTime
 
-  @@map("habits")
+  @@map("habit")
 }

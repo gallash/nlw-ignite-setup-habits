@@ -106,6 +106,10 @@ In order to run the prisma client, do:
 npx prisma studio
 ```
 
+### Configuration of CORS
+Downloading @fastify/cors
+
+
 ### Tip for when going to production
 Create a database 'deploy': `npx prisma migrate deploy`. We upload the 'deploy' to the production environment, while the 'dev' stays for development. Also, the Prisma development dependency does not go to production, since in production, the user won't have access to alter the DB.
 
