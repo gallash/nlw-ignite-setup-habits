@@ -107,10 +107,29 @@ npx prisma studio
 ```
 
 ### Configuration of CORS
-Downloading @fastify/cors
+Read more about CORS;
+Download @fastify/cors;
+Import CORS to the fastify server app;
+Enable it;
 
 
-### Tip for when going to production
+
+## Creating the frontend in React using Vite
+```bash
+npm create vite@latest
+```
+If vite isn't installed, the terminal will ask you to do so, and after that, you will be prompted to input the name of the new project (in this case, `web`) and what framework will it be built on. For this project, we will select React + Typescript.
+
+Next, cd in the new directoy and install the dependencies, which are listed in package.json inside the new dir, with `npm install`.
+
+Now, run `npm run dev` from the terminal inside `web`'s dir.
+
+#### `npm run dev` runs both the back and front end servers 
+
+
+
+
+#### Tips for when going to production
 Create a database 'deploy': `npx prisma migrate deploy`. We upload the 'deploy' to the production environment, while the 'dev' stays for development. Also, the Prisma development dependency does not go to production, since in production, the user won't have access to alter the DB.
 
 
