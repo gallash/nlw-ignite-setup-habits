@@ -14,9 +14,14 @@ function App() {
   */
   return (
     <div>
+      <Habits count={4}/>
+      <Habits count={10}/>
+      <Habits count={20}/>
       <Habits count={40}/>
+
     </div>
   )
+
 }
 
 export default App

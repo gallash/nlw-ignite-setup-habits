@@ -21,7 +21,7 @@ export function Habits(props: habitCount){
     CSS classes to HTML components, in the React world)
     */
     return (
-        <div className="bg-sky-400">{props.count}</div>
+        <div className="bg-sky-400 w-4 h-4 text-white rounded m-1 flex items-center justify-center">{props.count}</div>
     )
 }
 

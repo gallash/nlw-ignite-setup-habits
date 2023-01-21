@@ -159,6 +159,19 @@ After doing so, do not forget to
 
 
 
+## Installing the dev environment for React Native using Expo
+Instructions link: https://react-native.rocketseat.dev/
+
+## Installing and configuring the dev environment for Android SDK
+Also follow the link in the section above to install dependencies for Android SDK, and to install the thing itself.
+
+To screen cast from my phone to my Linux machine, I need to use a third party tool, airdroid (https://webcast.airdroid.com/#/) in tandem with their app on my smartphone. This step was necessary, since the Linux version of the Android SDK Electric Eel installed didn't allow me to download the Android Virtual Device, saying it was unavailable (jan 21th 2023).
+
+Also, I will not be configuring to use KVM (Kernel-mode Virtual Machine) this time. This is my first contact with mobile development, so I want to get a grasp of it first before moving to more complex and demanding environments.
+
+After installed, launch Android SDK from anywhere in the terminal by running `studio.sh`.
+
+
 
 #### Tips for when going to production
 Create a database 'deploy': `npx prisma migrate deploy`. We upload the 'deploy' to the production environment, while the 'dev' stays for development. Also, the Prisma development dependency does not go to production, since in production, the user won't have access to alter the DB.
