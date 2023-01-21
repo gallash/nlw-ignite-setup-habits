@@ -126,6 +126,37 @@ Now, run `npm run dev` from the terminal inside `web`'s dir.
 
 #### `npm run dev` runs both the back and front end servers 
 
+We can add HTML classes to our components by importing the component's CSS and passing the class as a `className` property to the returned HTML:
+```typescript
+// On "src/components/Habits/Habits.tsx"
+import "./Habits.css"
+
+
+interface HabitProps {
+	completed: number
+} 
+
+export function Habit(props: HabitProps){
+	return (
+		<div className="habit-block">{props.completed}</div>
+	)
+}
+```
+
+
+Next, we will install Tailwind css to help us stylize the project.
+```bash
+npm i -D autoprefixer postcss tailwindcss
+npx tailwind init -p
+```
+These will be installed as development dependencies, also postcss (base for the plugin called tailwindcss).
+The npx tailwind was used with a `-p` flag so that it creates a postcss.config.cjs file, otherwise Vite wouldn't find it.
+
+After doing so, do not forget to 
+* import `tailwind` in the `global.css`, 
+* to configure which files will be having access to tailwind's classes in the `tailwind.config.cjs` in the `content` section. 
+* import `global.css` to `App.tsx`, where the components are going to be rendered.
+
 
 
 
