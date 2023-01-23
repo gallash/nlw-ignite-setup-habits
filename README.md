@@ -171,6 +171,8 @@ Also, I will not be configuring to use KVM (Kernel-mode Virtual Machine) this ti
 
 After installed, launch Android SDK from anywhere in the terminal by running `studio.sh`.
 
+Follow the instructions on installing the device that is going to be used in this development (Pixel 4, 8GB storage). When installed, click on 'play'. When it's launched and powered on, open a terminal and type in `adb devices`. It should appear the virtual device connected to the computer, and its status 'device'.
+
 
 
 #### Tips for when going to production
