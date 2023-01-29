@@ -173,6 +173,20 @@ After installed, launch Android SDK from anywhere in the terminal by running `st
 
 Follow the instructions on installing the device that is going to be used in this development (Pixel 4, 8GB storage). When installed, click on 'play'. When it's launched and powered on, open a terminal and type in `adb devices`. It should appear the virtual device connected to the computer, and its status 'device'.
 
+In order to run the app in the emulator, we have to create first a project. We can create one by going to the root directory of the project (nlw-ignite-setup) and running `expo init`, and choosing the Bare Workflow template.
+
+After that, we can open the app by running `npm run android` in the directory of the app created by `expo init` (this directory, generally 'myapp', should contain `App.js` . For more details, follow this link https://docs.expo.dev/get-started/installation/), while `studio.sh` (Android Studio) is up and running.
+
+Next up, we need to install React Native CLI. Do it by running `npx react-native init <nameOfYourApp>`. It will install react-native to your machine.
+
+So far, we should have these terminals opened:
+- react-native installation
+- studio.sh, running Android SDK
+- npm run android inside myapp/, running the expo bare workflow app
+
+Now, to continue the configuration of React Native, open up two terminals, inside the react app's directory (in this project, it is called `igniteApp`), and run (one command in each terminal):
+- npm start [in terminal 1]
+- npm run android [in terminal 2]
 
 
 #### Tips for when going to production
