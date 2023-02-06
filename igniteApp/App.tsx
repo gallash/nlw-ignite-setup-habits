@@ -5,6 +5,9 @@
  * @format
  */
 
+
+
+/*
 import React from 'react';
 import type {PropsWithChildren} from 'react';
 import {
@@ -116,3 +119,26 @@ const styles = StyleSheet.create({
 });
 
 export default App;
+
+*/
+
+import { Text, View, StatusBar, StyleSheet } from 'react-native'
+
+
+export default function App(){
+  return (
+    <View style={styles.container}>
+      <Text>Open up App.tsx to start working on your app!</Text>
+      <StatusBar />
+    </View>
+  );
+}
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,  // It comes like this by default on React Native
+    backgroundColor: '#fff',
+    alignItems: 'center',
+    justifyContent: 'center'
+  }
+});

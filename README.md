@@ -180,13 +180,11 @@ After that, we can open the app by running `npm run android` in the directory of
 Next up, we need to install React Native CLI. Do it by running `npx react-native init <nameOfYourApp>`. It will install react-native to your machine.
 
 So far, we should have these terminals opened:
-- react-native installation
 - studio.sh, running Android SDK
-- npm run android inside myapp/, running the expo bare workflow app
 
-Now, to continue the configuration of React Native, open up two terminals, inside the react app's directory (in this project, it is called `igniteApp`), and run (one command in each terminal):
-- npm start [in terminal 1]
-- npm run android [in terminal 2]
+Now, to continue the configuration of React Native, open up two terminals inside the react app's directory (in this project, it is called `igniteApp`), and run (one command in each terminal):
+- npm start (in terminal 1)
+- npm run android (in terminal 2, run this one alone when 'android/' is already created)
 
 
 #### Tips for when going to production
